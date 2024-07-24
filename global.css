@@ -1,0 +1,383 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --text-small-link: Roboto;
+  
+    /* font sizes */
+    --text-small-link-size: 14px;
+    --text-regular-semi-bold-size: 16px;
+    --text-tiny-link-size: 12px;
+    --text-medium-semi-bold-size: 18px;
+    --heading-desktop-h2-size: 48px;
+    --font-size-19xl: 38px;
+    --font-size-10xl: 29px;
+    --heading-desktop-h3-size: 40px;
+    --heading-desktop-h4-size: 32px;
+    --font-size-5xl: 24px;
+    --text-large-semi-bold-size: 20px;
+    --heading-desktop-h1-size: 56px;
+  
+    /* Colors */
+    --background-color-primary: #fff;
+    --link-primary: #000;
+    --color-darkslategray-100: #333;
+    --color-darkslategray-200: rgba(51, 51, 51, 0.09);
+    --color-neutral-neutral: #666;
+    --color-neutral-neutral-lightest: #eee;
+  
+    /* Gaps */
+    --gap-21xl: 40px;
+    --gap-xl: 20px;
+    --gap-61xl: 80px;
+    --gap-13xl: 32px;
+    --gap-base: 16px;
+    --gap-5xl: 24px;
+    --gap-9xs: 4px;
+    --gap-29xl: 48px;
+    --gap-5xs: 8px;
+    --gap-sm: 14px;
+  
+    /* Paddings */
+    --padding-61xl: 80px;
+    --padding-45xl: 64px;
+    --padding-13xl: 32px;
+    --padding-33xl: 52px;
+    --padding-5xs: 8px;
+    --padding-xl: 20px;
+    --padding-xs: 12px;
+    --padding-3xs: 10px;
+    --padding-93xl: 112px;
+    --padding-54xl: 73px;
+    --padding-base: 16px;
+    --padding-4xl: 23px;
+    --padding-86xl: 105px;
+    --padding-10xl: 29px;
+    --padding-39xl: 58px;
+    --padding-sm: 14px;
+    --padding-28xl: 47px;
+    /*Clamp*/
+    --font-size-medium-hero: clamp(2rem, 1.5rem + 3vw, 4rem); /* Adjust these values as needed */
+    --font-size-lorem-ipsum: clamp(1rem, 0.875rem + 1vw, 2rem); /* Adjust these values as needed */
+
+  }
+  
+  @media screen and (max-width: 1250px) {
+    .Team {
+        padding-top: var(--padding-54xl);
+        padding-bottom: var(--padding-54xl);
+        box-sizing: border-box;
+      }
+    }
+
+    @media screen and (max-width: 750px) {
+    .Team {
+        gap: var(--gap-21xl);
+        padding: var(--padding-28xl) var(--padding-13xl);
+        box-sizing: border-box;
+      }
+      .Team-Content-Title {
+        font-size: var(--font-size-19xl);
+        line-height: 46px;
+      }
+      .Team-Selection {
+        gap: 48px;
+      }
+      .Team-Selection1 {
+        gap: var(--gap-13xl);
+      }
+
+    }
+    @media screen and (max-width: 450px) {
+    .Team {
+        gap: var(--gap-xl);
+      }
+      .Team-Content-Title {
+        font-size: var(--font-size-10xl);
+        line-height: 35px;
+      }
+      .Team-Selection{
+        gap: var(--gap-5xl);
+      }
+      .Team-Selection1 {
+        gap: var(--gap-base);
+      }
+      .Memeber-Name {
+      font-size: var(--text-regular-semi-bold-size);
+      line-height: 24px;
+    }
+    }
+
+
+
+
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+    .CTA {
+        height: 400px;
+    }
+
+    .background-image {
+        height: 600px;
+    }
+
+    .cta-left {
+        padding-right: 100px;
+    }
+
+    .cta-left h2 {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .CTA {
+        height: 300px;
+    }
+
+    .background-image {
+        height: 500px;
+    }
+
+    .cta-left {
+        padding-right: 50px;
+    }
+
+    .cta-left h2 {
+        font-size: 2em;
+    }
+
+    .cta-Right {
+        flex-direction: column;
+    }
+
+   .cta-box {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+   .CTA {
+        height: 200px;
+    }
+
+   .background-image {
+        height: 400px;
+    }
+
+   .cta-left {
+        padding-right: 20px;
+    }
+
+   .cta-left h2 {
+        font-size: 1.5em;
+    }
+
+   .cta-box {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+   .CTA {
+        height: 150px;
+    }
+
+   .background-image {
+        height: 300px;
+    }
+
+   .cta-left {
+        padding-right: 10px;
+    }
+
+   .cta-left h2 {
+        font-size: 1.2em;
+    }
+
+   .cta-box {
+        padding: 10px;
+    }
+}
+/* For devices with a max width of 480px */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        padding: 10px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+
+    .footer-partition {
+        display: none;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .cta-left {
+        padding-right: 0;
+    }
+
+    .cta-left h2 {
+        font-size: 1.5em;
+    }
+
+    .cta-right {
+        flex-direction: column;
+    }
+
+    .cta-box {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .carousel .slide-track {
+        width: calc(100px * 16); /* Adjust based on the number of slides */
+    }
+
+    .carousel .slide {
+        min-width: 100px;
+        margin: 0 5px;
+    }
+
+    .carousel .slide img {
+        max-width: 75px;
+        max-height: 50px;
+    }
+
+    .faq-container {
+        width: 90%;
+    }
+
+    .faq-question {
+        font-size: 1em;
+    }
+
+    .faq-answer {
+        font-size: 0.9em;
+    }
+
+    .additional-questions h2 {
+        font-size: 30px;
+    }
+
+    .additional-questions p {
+        font-size: 16px;
+    }
+
+    .Add-contact-btn {
+        font-size: 0.9em;
+    }
+}
+
+/* For devices with a max width of 320px */
+@media (max-width: 320px) {
+    body {
+        font-size: 12px;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 3px 0;
+    }
+
+    nav ul li a {
+        padding: 8px;
+    }
+
+    .footer-container {
+        padding: 0 10px;
+    }
+
+    .footer-logo img {
+        max-width: 100px;
+    }
+
+    .footer-column ul li {
+        margin-bottom: 5px;
+    }
+
+    .footer-column ul li a {
+        font-size: 0.9em;
+    }
+
+    .cta-left h2 {
+        font-size: 1.2em;
+    }
+
+    .cta-box {
+        padding: 10px;
+    }
+
+    .carousel .slide-track {
+        width: calc(75px * 16); /* Adjust based on the number of slides */
+    }
+
+    .carousel .slide {
+        min-width: 75px;
+        margin: 0 3px;
+    }
+
+    .carousel .slide img {
+        max-width: 50px;
+        max-height: 30px;
+    }
+
+    .faq-question {
+        font-size: 0.9em;
+    }
+
+    .faq-answer {
+        font-size: 0.8em;
+    }
+
+    .additional-questions h2 {
+        font-size: 25px;
+    }
+
+    .additional-questions p {
+        font-size: 14px;
+    }
+
+    .Add-contact-btn {
+        font-size: 0.8em;
+    }
+}

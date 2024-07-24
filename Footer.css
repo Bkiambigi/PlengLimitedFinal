@@ -1,0 +1,161 @@
+
+.footer {
+  background-color: #201e31;
+  color: white;
+  padding: 40px 0;
+}
+
+.footer-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative; /* Ensure the container has a relative position */
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center content horizontally */
+  flex-direction: column; /* Stack items vertically */
+  text-align: center; /* Center items horizontally */
+}
+
+.footer-logo img {
+  max-width: 400px; /* Increase the size of the logo */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 30px; /* Add margin to separate from partition */
+  margin-left: -50px; /* Adjusted margin to the left */
+  border-radius: 200%;
+  background-color: #201e31;
+}
+
+.footer-partition {
+  width: 2px;
+  background-color: white;
+  height: 100%; /* Make sure the height of the partition matches the container */
+  position: absolute; /* Use absolute positioning */
+  top: 0; /* Start from the top of the container */
+  left: 300px
+}
+
+.footer-content {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  margin-left: 20px; /* Adjusted left margin */
+}
+
+.footer-column {
+  flex: 1;
+  padding: 0 20px; /* Reduce padding on the sides */
+}
+.working-hours{
+  left: 100px;
+  position: relative;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+  position: relative;
+  padding-bottom: 2px; /* Add padding to make space for the line */
+}
+
+.footer-column ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0; /* Position the line at the bottom of the text */
+  width: 0;
+  height: 0.1em; /* Use em units to make the height relative to the text size */
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+
+.footer-column ul li a:hover::after {
+  width: 100%; /* Expand the line to the full width of the link */
+}
+
+.footer-column ul li a i {
+  margin-right: 8px;
+}
+
+.footer-column ul li a:hover {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-partition {
+      display: none;
+  }
+
+  .footer-content {
+      flex-direction: column;
+      align-items: center;
+  }
+  .footer-logo img {
+    max-width: 90%; /* Make the logo stretch relatively */
+    margin-left: -50px; /* Add left margin */
+    max-width: 400px; /* Increase the size of the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 30px; /* Add margin to separate from partition */
+    margin-left: -50px; /* Adjusted margin to the left */
+    border-radius: 200%;
+  }
+
+  .footer-column {
+      padding: 10px 0;
+      text-align: center;
+  }
+
+  .footer-column ul {
+      text-align: left;
+  }
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center icons horizontally */
+  margin-top: 30px; /* Adjust margin to separate from logo */
+  left: -40px;
+  position: relative;
+}
+
+.social-icons a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 15px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: lightblue;
+}

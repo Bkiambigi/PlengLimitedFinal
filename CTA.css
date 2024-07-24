@@ -1,0 +1,516 @@
+/*CTA*/
+.CTA {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    margin-top: 0px;
+    color: #ffffff; /* Ensure text is readable on the image */
+    height: 80vh; 
+    overflow-y: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Use 100% instead of 800px */
+    object-fit: cover;
+    z-index: -1; /* Ensure the image is behind the content */
+}
+
+.cta-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    border-radius: 10px; /* Optional: Add some border-radius for a nicer look */
+}
+
+
+.cta-left {
+    flex: 1;
+    padding-right: 200px;
+}
+
+.cta-left h2 {
+    font-size: 3em;
+    font-weight: 600;
+    color: #000000;
+    align-items: center;
+}
+
+.cta-right {
+    display: flex;
+    gap: 20px;
+}
+
+.cta-box {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for the boxes */
+    border: 1px solid #ccc;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+    color: #000000; /* Ensure text color is readable */
+}
+
+.cta-box h3 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.cta-box p {
+    margin-bottom: 20px;
+}
+
+.cta-box button {
+    padding: 10px 20px;
+    background-color: #0d152a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-box button:hover {
+    background-color: #1779da;
+}
+
+.cta-box:hover {
+    transform: translateY(-10px);
+}
+
+@font-face {
+  font-family: 'Cascadia';
+  src: url('fonts/Cascadia-Regular.eot');
+  src: url('fonts/Cascadia-Regular.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Cascadia-Regular.woff2') format('woff2'),
+       url('fonts/Cascadia-Regular.woff') format('woff'),
+       url('fonts/Cascadia-Regular.ttf') format('truetype'),
+       url('fonts/Cascadia-Regular.svg#Cascadia-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Cascadia', sans-serif;
+}
+
+/*End OF CTA*/
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+    .CTA {
+        height: 400px;
+    }
+
+    .background-image {
+        height: 600px;
+    }
+
+    .cta-left {
+        padding-right: 100px;
+    }
+
+    .cta-left h2 {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .CTA {
+        height: 300px;
+    }
+
+    .background-image {
+        height: 500px;
+    }
+
+    .cta-left {
+        padding-right: 50px;
+    }
+
+    .cta-left h2 {
+        font-size: 2em;
+    }
+
+    .cta-Right {
+        flex-direction: column;
+    }
+
+   .cta-box {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+   .CTA {
+        height: 200px;
+    }
+
+   .background-image {
+        height: 400px;
+    }
+
+   .cta-left {
+        padding-right: 20px;
+    }
+
+   .cta-left h2 {
+        font-size: 1.5em;
+    }
+
+   .cta-box {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+   .CTA {
+        height: 150px;
+    }
+
+   .background-image {
+        height: 300px;
+    }
+
+   .cta-left {
+        padding-right: 10px;
+    }
+
+   .cta-left h2 {
+        font-size: 1.2em;
+    }
+
+   .cta-box {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .Team {
+        padding-top: var(--padding-54xl);
+        padding-bottom: var(--padding-54xl);
+        box-sizing: border-box;
+      }
+    }
+
+    @media screen and (max-width: 750px) {
+    .Team {
+        gap: var(--gap-21xl);
+        padding: var(--padding-28xl) var(--padding-13xl);
+        box-sizing: border-box;
+      }
+      .Team-Content-Title {
+        font-size: var(--font-size-19xl);
+        line-height: 46px;
+      }
+      .Team-Selection {
+        gap: 48px;
+      }
+      .Team-Selection1 {
+        gap: var(--gap-13xl);
+      }
+
+    }
+    @media screen and (max-width: 450px) {
+    .Team {
+        gap: var(--gap-xl);
+      }
+      .Team-Content-Title {
+        font-size: var(--font-size-10xl);
+        line-height: 35px;
+      }
+      .Team-Selection{
+        gap: var(--gap-5xl);
+      }
+      .Team-Selection1 {
+        gap: var(--gap-base);
+      }
+      .Memeber-Name {
+      font-size: var(--text-regular-semi-bold-size);
+      line-height: 24px;
+    }
+    }
+
+
+
+
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+    .CTA {
+        height: 400px;
+    }
+
+    .background-image {
+        height: 600px;
+    }
+
+    .cta-left {
+        padding-right: 100px;
+    }
+
+    .cta-left h2 {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .CTA {
+        height: 300px;
+    }
+
+    .background-image {
+        height: 500px;
+    }
+
+    .cta-left {
+        padding-right: 50px;
+    }
+
+    .cta-left h2 {
+        font-size: 2em;
+    }
+
+    .cta-Right {
+        flex-direction: column;
+    }
+
+   .cta-box {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+   .CTA {
+        height: 200px;
+    }
+
+   .background-image {
+        height: 400px;
+    }
+
+   .cta-left {
+        padding-right: 20px;
+    }
+
+   .cta-left h2 {
+        font-size: 1.5em;
+    }
+
+   .cta-box {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+   .CTA {
+        height: 150px;
+    }
+
+   .background-image {
+        height: 300px;
+    }
+
+   .cta-left {
+        padding-right: 10px;
+    }
+
+   .cta-left h2 {
+        font-size: 1.2em;
+    }
+
+   .cta-box {
+        padding: 10px;
+    }
+}
+/* For devices with a max width of 480px */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        padding: 10px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+
+    .footer-partition {
+        display: none;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .cta-left {
+        padding-right: 0;
+    }
+
+    .cta-left h2 {
+        font-size: 1.5em;
+    }
+
+    .cta-right {
+        flex-direction: column;
+    }
+
+    .cta-box {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .carousel .slide-track {
+        width: calc(100px * 16); /* Adjust based on the number of slides */
+    }
+
+    .carousel .slide {
+        min-width: 100px;
+        margin: 0 5px;
+    }
+
+    .carousel .slide img {
+        max-width: 75px;
+        max-height: 50px;
+    }
+
+    .faq-container {
+        width: 90%;
+    }
+
+    .faq-question {
+        font-size: 1em;
+    }
+
+    .faq-answer {
+        font-size: 0.9em;
+    }
+
+    .additional-questions h2 {
+        font-size: 30px;
+    }
+
+    .additional-questions p {
+        font-size: 16px;
+    }
+
+    .Add-contact-btn {
+        font-size: 0.9em;
+    }
+}
+
+/* For devices with a max width of 320px */
+@media (max-width: 320px) {
+    body {
+        font-size: 12px;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 3px 0;
+    }
+
+    nav ul li a {
+        padding: 8px;
+    }
+
+    .footer-container {
+        padding: 0 10px;
+    }
+
+    .footer-logo img {
+        max-width: 100px;
+    }
+
+    .footer-column ul li {
+        margin-bottom: 5px;
+    }
+
+    .footer-column ul li a {
+        font-size: 0.9em;
+    }
+
+    .cta-left h2 {
+        font-size: 1.2em;
+    }
+
+    .cta-box {
+        padding: 10px;
+    }
+
+    .carousel .slide-track {
+        width: calc(75px * 16); /* Adjust based on the number of slides */
+    }
+
+    .carousel .slide {
+        min-width: 75px;
+        margin: 0 3px;
+    }
+
+    .carousel .slide img {
+        max-width: 50px;
+        max-height: 30px;
+    }
+
+    .faq-question {
+        font-size: 0.9em;
+    }
+
+    .faq-answer {
+        font-size: 0.8em;
+    }
+
+    .additional-questions h2 {
+        font-size: 25px;
+    }
+
+    .additional-questions p {
+        font-size: 14px;
+    }
+
+    .Add-contact-btn {
+        font-size: 0.8em;
+    }
+}

@@ -1,0 +1,243 @@
+.Team-Selection,
+.content27,
+.Team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 100%;
+   margin: 0 auto; /* Add this line to center the.Team element horizontally */
+}
+
+
+.Team-Selection,
+.Team {
+  align-self: stretch;
+}
+
+.Team-Selection {
+    gap: 96px;
+    font-size: var(--heading-desktop-h6-size);
+  }
+
+.Team {
+    background-color: #FCFCFC;
+    overflow: hidden;
+    padding: var(--padding-93xl) var(--padding-45xl);
+    box-sizing: border-box;
+    gap: var(--gap-61xl);
+    z-index: 1;
+    text-align: center;
+    font-size: var(--text-regular-semi-bold-size);
+    color: var(--link-primary);
+    font-family: var(--text-small-link);
+}
+
+.Team-Title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.Team-Title {
+    width: 768px;
+    gap: var(--gap-base);
+    max-width: 100%;
+  }
+  .Quote-title1 {
+    position: relative;
+    line-height: 150%;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 89px;
+  }
+
+.Team-Content,
+.section-title5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+ }
+.Team-Content {
+    align-self: stretch;
+    gap: var(--gap-5xl);
+    font-size: var(--heading-desktop-h2-size);
+}
+
+.Team-Content-Title,
+.Team-Content-Text{
+  align-self: stretch;
+  position: relative;
+}
+.Team-Content-Title {
+  margin: 0;
+  font-size: inherit;
+  line-height: 58px;
+  font-weight: 700;
+  font-family: inherit;
+}
+
+.Team-Content-Text {
+    font-size: var(--text-medium-semi-bold-size);
+    line-height: 150%;
+  }
+
+
+
+.card7,
+.Team-Selection1,
+.row1,
+.Memeber-social-icons {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+.Team-Selection1,
+.row1 {
+    align-self: stretch;
+    align-items: flex-start;
+  }
+
+.Team-Selection1 {
+    flex-direction: column;
+    gap: 64px;
+  }
+
+.card3,
+.Team-Row,
+.Memeber-social-icons {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+.Team-Row {
+    align-self: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: var(--gap-13xl);
+}
+
+.Team-Card,
+.Memeber-social-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-sm);
+}
+.Team-Card {
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap-5xl);
+    min-width: 232px;
+    max-width: 304px;
+    
+  }
+
+.Memeber-image-icon {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.Team-Memebers {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-base);
+  }
+  .Memeber-Title {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .Job-Title-Memeber,
+  .Memeber-Name {
+    align-self: stretch;
+    position: relative;
+    line-height: 150%;
+  }
+  .Memeber-Name {
+    font-weight: 600;
+  }
+
+  .Job-Title-Memeber {
+    font-size: var(--text-medium-semi-bold-size);
+}
+
+.Memebers-Bio {
+    align-self: stretch;
+    position: relative;
+    font-size: var(--text-regular-semi-bold-size);
+    line-height: 150%;
+  }
+
+  .icon-dribble,
+  .icon-linkedin,
+  .icon-x {
+    height: 24px;
+    width: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    min-height: 24px;
+  }
+
+
+
+
+
+
+  @media screen and (max-width: 1250px) {
+    .Team {
+        padding-top: var(--padding-54xl);
+        padding-bottom: var(--padding-54xl);
+        box-sizing: border-box;
+      }
+    }
+
+    @media screen and (max-width: 750px) {
+    .Team {
+        gap: var(--gap-21xl);
+        padding: var(--padding-28xl) var(--padding-13xl);
+        box-sizing: border-box;
+      }
+      .Team-Content-Title {
+        font-size: var(--font-size-19xl);
+        line-height: 46px;
+      }
+      .Team-Selection {
+        gap: 48px;
+      }
+      .Team-Selection1 {
+        gap: var(--gap-13xl);
+      }
+
+    }
+    @media screen and (max-width: 450px) {
+    .Team {
+        gap: var(--gap-xl);
+      }
+      .Team-Content-Title {
+        font-size: var(--font-size-10xl);
+        line-height: 35px;
+      }
+      .Team-Selection{
+        gap: var(--gap-5xl);
+      }
+      .Team-Selection1 {
+        gap: var(--gap-base);
+      }
+      .Memeber-Name {
+      font-size: var(--text-regular-semi-bold-size);
+      line-height: 24px;
+    }
+    }
